@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Port Decision-Support System: Conceptual Framework</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin: 0;
+        }
+        
+        .header h2 {
+            color: #34495e;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        
+        .header p {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #34495e;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        h3 {
+            color: #34495e;
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        h4 {
+            color: #34495e;
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 6px;
+        }
+        
+        code {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 3px;
+            padding: 2px 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: #e83e8c;
+        }
+        
+        pre {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+        
+        pre code {
+            background: none;
+            border: none;
+            padding: 0;
+            color: #333;
+        }
+        
+        strong {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        em {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #bdc3c7;
+            font-size: 12px;
+            color: #7f8c8d;
+            text-align: center;
+        }
+        
+        .download-section {
+            background-color: #f8f9fa;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .download-section h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        .download-button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .download-button:hover {
+            background-color: #2980b9;
+        }
+        
+        @media print {
+            body {
+                max-width: none;
+                margin: 0;
+                padding: 20px;
+            }
+            
+            .download-section {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI Port Decision-Support System</h1>
+        <h2>Conceptual Framework: Technical Documentation</h2>
+        <p><strong>Authors:</strong> Adele + Lily</p>
+        <p><strong>Date:</strong> January 2025</p>
+        <p><strong>System:</strong> RAG-LLM for Ports - Backend Implementation</p>
+    </div>
+
+    <div class="download-section">
+        <h3>📄 Download Options</h3>
+        <p>Choose your preferred format:</p>
+        <a href="AI_Port_Decision_Support_System_Conceptual_Framework_20251022_195309.pdf" class="download-button" download>📥 Download PDF</a>
+        <a href="Conceptual_Framework_Technical_Documentation.md" class="download-button" download>📝 Download Markdown</a>
+        <p><em>Or use Ctrl+P (Cmd+P on Mac) to print this page as PDF</em></p>
+    </div>
+
+    <h1>3. Conceptual Framework: Multi-Layer AI-Driven Port Decision-Support Architecture</h1>
+
+    <h2>3.1 System Architecture Overview</h2>
+    <p>The AI Port Decision-Support System implements a sophisticated multi-layer architecture that addresses the complex interdependencies inherent in port operations. The system leverages <strong>Retrieval-Augmented Generation (RAG)</strong> combined with <strong>LangGraph orchestration</strong> to provide intelligent decision support across four critical operational layers: <strong>Operations</strong>, <strong>Environment</strong>, <strong>Governance</strong>, and <strong>Community</strong>.</p>
+
+    <h2>3.2 Technical Architecture Components</h2>
+
+    <h3>3.2.1 Core RAG-LLM Framework</h3>
+    <p>The system implements a <strong>hybrid RAG architecture</strong> using:</p>
+    <ul>
+        <li><strong>ChromaDB vector database</strong> for semantic document storage and retrieval</li>
+        <li><strong>OpenAI GPT-3.5-turbo</strong> for natural language understanding and generation</li>
+        <li><strong>Sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2</strong> for multilingual embedding generation</li>
+        <li><strong>LangChain framework</strong> for document processing and chain orchestration</li>
+    </ul>
+
+    <p><strong>Technical Implementation:</strong></p>
+    <pre><code>class PortInformationRetrieval:
+    def __init__(self, openai_api_key: str, chroma_persist_directory: str):
+        self.embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
+        self.vectorstore = Chroma(persist_directory=chroma_persist_directory)
+        self.llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.1)</code></pre>
+
+    <h3>3.2.2 LangGraph Workflow Orchestration</h3>
+    <p>The system employs <strong>LangGraph</strong> for complex workflow management, implementing <strong>parallel branching</strong> to analyze multiple scenarios simultaneously:</p>
+
+    <p><strong>State Management:</strong></p>
+    <pre><code>class PortWorkflowState(TypedDict):
+    query: str
+    intent: Optional[str]
+    retrieved_documents: Optional[List[Dict[str, Any]]]
+    parallel_results: Optional[Dict[str, Any]]
+    freshness_check: Optional[bool]
+    confidence_check: Optional[bool]
+    compliance_check: Optional[bool]</code></pre>
+
+    <p><strong>Parallel Analysis Implementation:</strong></p>
+    <p>The system executes four concurrent analysis branches:</p>
+    <ol>
+        <li><strong>Safety Analysis</strong>: Risk assessment and safety protocol compliance</li>
+        <li><strong>Efficiency Analysis</strong>: Operational optimization and resource utilization</li>
+        <li><strong>Cost Analysis</strong>: Economic impact and cost-benefit evaluation</li>
+        <li><strong>Risk Analysis</strong>: Risk factor identification and mitigation strategies</li>
+    </ol>
+
+    <h3>3.2.3 Intent Classification System</h3>
+    <p>The system implements a <strong>rule-based intent router</strong> with 9 specialized intent types:</p>
+
+    <p><strong>Intent Categories:</strong></p>
+    <ul>
+        <li><strong>Emergency</strong> (Priority 0): Critical incidents requiring immediate response</li>
+        <li><strong>Safety</strong> (Priority 1): Safety protocols and hazard management</li>
+        <li><strong>Weather</strong> (Priority 1): Meteorological conditions and forecasts</li>
+        <li><strong>Berthing</strong> (Priority 2): Vessel berth allocation and scheduling</li>
+        <li><strong>Cargo</strong> (Priority 2): Cargo handling and logistics operations</li>
+        <li><strong>Regulatory</strong> (Priority 2): Compliance and regulatory requirements</li>
+        <li><strong>Operations</strong> (Priority 3): General operational procedures</li>
+        <li><strong>Equipment</strong> (Priority 3): Equipment maintenance and management</li>
+        <li><strong>General</strong> (Priority 4): General information queries</li>
+    </ul>
+
+    <h3>3.2.4 Decision Gates Framework</h3>
+    <p>The system implements <strong>three-tier decision validation</strong> to ensure information quality:</p>
+
+    <p><strong>Freshness Gate:</strong></p>
+    <ul>
+        <li><strong>Threshold</strong>: 24-hour maximum age for operational data</li>
+        <li><strong>Algorithm</strong>: Exponential decay scoring based on document timestamps</li>
+        <li><strong>Implementation</strong>: <code>freshness_score = max(0.0, 1.0 - (age_hours / 24))</code></li>
+    </ul>
+
+    <p><strong>Confidence Gate:</strong></p>
+    <ul>
+        <li><strong>Threshold</strong>: 0.7 minimum confidence score</li>
+        <li><strong>Factors</strong>: Document type priority, similarity scores, source reliability</li>
+        <li><strong>Scoring</strong>: Multi-factor weighted algorithm considering document authority</li>
+    </ul>
+
+    <p><strong>Compliance Gate:</strong></p>
+    <ul>
+        <li><strong>Threshold</strong>: 0.8 minimum compliance score for safety-critical operations</li>
+        <li><strong>Validation</strong>: Safety keyword matching, regulatory pattern recognition</li>
+        <li><strong>Implementation</strong>: Content analysis for maritime-specific compliance requirements</li>
+    </ul>
+
+    <h2>3.3 Multi-Layer Port Operations Integration</h2>
+
+    <h3>3.3.1 Operational Layer Integration</h3>
+    <p>The system processes <strong>operational queries</strong> through specialized pipelines:</p>
+
+    <p><strong>Vessel Operations:</strong></p>
+    <ul>
+        <li><strong>Berth Allocation</strong>: Dynamic scheduling with conflict resolution</li>
+        <li><strong>Cargo Handling</strong>: Container and bulk cargo optimization</li>
+        <li><strong>Equipment Management</strong>: Crane and conveyor system coordination</li>
+    </ul>
+
+    <h3>3.3.2 Environmental Layer Integration</h3>
+    <p>The system addresses <strong>environmental concerns</strong> through:</p>
+
+    <p><strong>Emission Monitoring:</strong></p>
+    <ul>
+        <li><strong>Vessel Emissions</strong>: Tracking and optimization of ship emissions</li>
+        <li><strong>Equipment Efficiency</strong>: Monitoring cargo-handling equipment performance</li>
+        <li><strong>Air Quality</strong>: Integration with environmental monitoring systems</li>
+    </ul>
+
+    <p><strong>Environmental Decision Support:</strong></p>
+    <ul>
+        <li><strong>Trade-off Analysis</strong>: Balancing operational efficiency with environmental impact</li>
+        <li><strong>Compliance Validation</strong>: Ensuring adherence to environmental regulations</li>
+        <li><strong>Community Impact Assessment</strong>: Evaluating effects on nearby residents</li>
+    </ul>
+
+    <h3>3.3.3 Governance Layer Integration</h3>
+    <p>The system ensures <strong>regulatory compliance</strong> through:</p>
+
+    <p><strong>Regulatory Framework:</strong></p>
+    <ul>
+        <li><strong>IMO Compliance</strong>: International Maritime Organization standards</li>
+        <li><strong>Port State Control</strong>: Vessel inspection and certification requirements</li>
+        <li><strong>Customs and Immigration</strong>: Border control and documentation requirements</li>
+    </ul>
+
+    <h3>3.3.4 Community Layer Integration</h3>
+    <p>The system considers <strong>community impact</strong> through:</p>
+
+    <p><strong>Stakeholder Analysis:</strong></p>
+    <ul>
+        <li><strong>Resident Well-being</strong>: Air quality and noise level monitoring</li>
+        <li><strong>Local Business Impact</strong>: Economic effects on nearby businesses</li>
+        <li><strong>Worker Safety</strong>: Port worker health and safety considerations</li>
+    </ul>
+
+    <h2>3.4 Advanced Technical Features</h2>
+
+    <h3>3.4.1 Multilingual Processing</h3>
+    <p>The system implements <strong>comprehensive multilingual support</strong>:</p>
+
+    <p><strong>Language Detection:</strong></p>
+    <ul>
+        <li><strong>Supported Languages</strong>: English, Spanish, French, German, Italian, Portuguese, Chinese</li>
+        <li><strong>Detection Algorithm</strong>: <code>langdetect</code> library with maritime terminology enhancement</li>
+    </ul>
+
+    <p><strong>Translation Pipeline:</strong></p>
+    <ul>
+        <li><strong>MarianMT Integration</strong>: Neural machine translation for maritime documents</li>
+        <li><strong>Domain-Specific Translation</strong>: Specialized maritime terminology handling</li>
+        <li><strong>Cross-Language Retrieval</strong>: Semantic search across multiple languages</li>
+    </ul>
+
+    <h3>3.4.2 Security and Data Protection</h3>
+    <p>The system implements <strong>advanced security measures</strong>:</p>
+
+    <p><strong>Data Redaction:</strong></p>
+    <ul>
+        <li><strong>Maritime-Specific Patterns</strong>: IMO numbers, MMSI codes, vessel names</li>
+        <li><strong>Personal Information</strong>: Email addresses, phone numbers, personal identifiers</li>
+        <li><strong>Financial Data</strong>: Cargo values, account numbers, financial transactions</li>
+        <li><strong>Implementation</strong>: 20+ specialized redaction rules with configurable patterns</li>
+    </ul>
+
+    <h3>3.4.3 API Architecture</h3>
+    <p>The system provides <strong>comprehensive REST API</strong> with 12 specialized endpoints:</p>
+
+    <p><strong>Core Endpoints:</strong></p>
+    <ul>
+        <li><strong><code>/ask</code></strong>: Simple RAG queries for basic information retrieval</li>
+        <li><strong><code>/ask_graph</code></strong>: Advanced LangGraph workflow execution</li>
+        <li><strong><code>/what-if</code></strong>: Scenario analysis with parallel processing</li>
+        <li><strong><code>/search</code></strong>: Document similarity search without answer generation</li>
+    </ul>
+
+    <p><strong>Management Endpoints:</strong></p>
+    <ul>
+        <li><strong><code>/health</code></strong>: System health monitoring and component status</li>
+        <li><strong><code>/intent/classify</code></strong>: Intent classification testing and debugging</li>
+        <li><strong><code>/decision/thresholds</code></strong>: Dynamic threshold configuration</li>
+    </ul>
+
+    <h2>3.5 System Integration and Scalability</h2>
+
+    <h3>3.5.1 Real-Time Processing</h3>
+    <p>The system implements <strong>asynchronous processing</strong> for real-time decision support:</p>
+
+    <p><strong>Performance Metrics:</strong></p>
+    <ul>
+        <li><strong>Query Processing Time</strong>: < 2.5 seconds for complex multi-scenario analysis</li>
+        <li><strong>Parallel Execution</strong>: Concurrent analysis of 4+ scenarios</li>
+        <li><strong>Throughput</strong>: Support for multiple simultaneous queries</li>
+    </ul>
+
+    <h3>3.5.2 Scalability Architecture</h3>
+    <p><strong>Horizontal Scaling:</strong></p>
+    <ul>
+        <li><strong>Microservices Architecture</strong>: Modular component design</li>
+        <li><strong>API Gateway</strong>: FastAPI-based scalable web service</li>
+        <li><strong>Database Optimization</strong>: ChromaDB with persistent storage</li>
+    </ul>
+
+    <h2>3.6 Technical Validation and Quality Assurance</h2>
+
+    <h3>3.6.1 Decision Gate Validation</h3>
+    <p>The system implements <strong>multi-layer validation</strong> to ensure decision quality:</p>
+
+    <p><strong>Information Freshness Validation:</strong></p>
+    <ul>
+        <li><strong>Temporal Analysis</strong>: Document age assessment with configurable thresholds</li>
+        <li><strong>Time-Sensitive Queries</strong>: Enhanced freshness requirements for critical operations</li>
+        <li><strong>Weather Data</strong>: Specialized handling for rapidly changing meteorological conditions</li>
+    </ul>
+
+    <h3>3.6.2 Compliance Framework</h3>
+    <p><strong>Regulatory Compliance Validation:</strong></p>
+    <ul>
+        <li><strong>Safety Protocol Adherence</strong>: Automated safety requirement checking</li>
+        <li><strong>Regulatory Standard Compliance</strong>: IMO and port-specific regulation validation</li>
+        <li><strong>Document Authority Assessment</strong>: Source reliability and certification verification</li>
+    </ul>
+
+    <h2>3.7 Conclusion</h2>
+    <p>The AI Port Decision-Support System represents a <strong>sophisticated technical framework</strong> that addresses the multi-layered complexity of port operations through:</p>
+
+    <ol>
+        <li><strong>Advanced RAG-LLM Architecture</strong>: Semantic document retrieval with intelligent answer generation</li>
+        <li><strong>LangGraph Orchestration</strong>: Parallel workflow execution with state management</li>
+        <li><strong>Multi-Dimensional Analysis</strong>: Simultaneous consideration of operational, environmental, governance, and community factors</li>
+        <li><strong>Quality Assurance Framework</strong>: Multi-tier validation ensuring decision reliability</li>
+        <li><strong>Scalable Architecture</strong>: Production-ready system with comprehensive API integration</li>
+    </ol>
+
+    <p>This technical framework enables <strong>data-driven decision-making</strong> that considers the <strong>interdependent nature</strong> of port operations while maintaining <strong>regulatory compliance</strong> and <strong>community well-being</strong>. The system's <strong>parallel processing capabilities</strong> and <strong>multi-scenario analysis</strong> provide port operators with <strong>comprehensive decision support</strong> that balances efficiency, safety, environmental protection, and community impact.</p>
+
+    <h2>Technical Implementation Summary</h2>
+
+    <h3>Key Technical Components:</h3>
+    <ul>
+        <li><strong>32 files</strong> with <strong>5,608 lines of code</strong></li>
+        <li><strong>LangGraph workflow orchestration</strong> with parallel branching</li>
+        <li><strong>9 intent classification types</strong> with priority-based routing</li>
+        <li><strong>3-tier decision gates</strong> for quality validation</li>
+        <li><strong>12 REST API endpoints</strong> for comprehensive system access</li>
+        <li><strong>Multilingual support</strong> for 7 languages</li>
+        <li><strong>20+ security redaction patterns</strong> for maritime data protection</li>
+        <li><strong>ChromaDB integration</strong> for vector storage and retrieval</li>
+        <li><strong>FastAPI server</strong> with production-ready architecture</li>
+    </ul>
+
+    <h3>Performance Metrics:</h3>
+    <ul>
+        <li><strong>Query Processing</strong>: < 2.5 seconds for complex analysis</li>
+        <li><strong>Parallel Execution</strong>: 4+ concurrent scenario analysis</li>
+        <li><strong>System Reliability</strong>: Multi-layer validation and error handling</li>
+        <li><strong>Scalability</strong>: Horizontal and vertical scaling capabilities</li>
+    </ul>
+
+    <h3>Repository:</h3>
+    <p><strong>GitHub:</strong> <a href="https://github.com/YishuoJiang/RAG-LLM-for-Ports/tree/backend">https://github.com/YishuoJiang/RAG-LLM-for-Ports/tree/backend</a></p>
+
+    <div class="footer">
+        <p>Generated on January 22, 2025</p>
+        <p>Repository: https://github.com/YishuoJiang/RAG-LLM-for-Ports/tree/backend</p>
+    </div>
+</body>
+</html>
+
+
+

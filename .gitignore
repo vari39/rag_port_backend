@@ -1,0 +1,14 @@
+.env
+.env.*
+Data/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.DS_Store
+*.log
+RAG-LLM-for-Ports-backend/storage/

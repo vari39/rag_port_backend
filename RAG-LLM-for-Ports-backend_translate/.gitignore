@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Data / models (adjust to your project)
+data/
+artifacts/
+models/
+*.bin
+*.pt
+*.pth
+*.onnx
+*.dylib
+*.so
